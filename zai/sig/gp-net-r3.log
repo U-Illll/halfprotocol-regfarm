@@ -1,0 +1,5 @@
+attach: https://chat.z.ai/auth
+listening 150000ms ...
+REQ #1 POST https://no8xfe-verify.captcha-open-southeast.aliyuncs.com/ pd=2545
+RESP #1 [200] len=348
+REQ #2 GET https://zcode.z.ai/api/v1/zai/blank.gif?pd=zai&bt=er&tm=pc&ct=global_network_error&ctvl=Failed+to+fetch&usid=9 pd=0

@@ -4,6 +4,7 @@ cas-cred.txt
 **/live-key.json
 **/live-aaduane.txt
 *.log
+!zai/sig/gp-net-r*.log
 node_modules/
 __pycache__/
 *.pyc

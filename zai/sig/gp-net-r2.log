@@ -1,0 +1,15 @@
+attach: https://chat.z.ai/auth
+listening 200000ms ...
+REQ #1 POST https://cloudauth-device-dualstack.ap-southeast-1.aliyuncs.com/ pd=3701
+REQ #2 POST https://no8xfe-verify.captcha-open-southeast.aliyuncs.com/ pd=2367
+RESP #2 [200] len=202
+REQ #3 POST https://no8xfe.captcha-open-southeast.aliyuncs.com/ pd=1608
+RESP #1 [200] len=85
+RESP #3 [200] len=403
+REQ #4 POST https://no8xfe-verify.captcha-open-southeast.aliyuncs.com/ pd=2545
+RESP #4 [200] len=348
+captured: 4 requests; saved to: /tmp/captcha-pages/zai-js/gp-net-r2.json
+#1 [200] cloudauth-device-dualstack.ap-southeast-1.aliyuncs.com pd=3701 rb=85
+#2 [200] no8xfe-verify.captcha-open-southeast.aliyuncs.com pd=2367 rb=202
+#3 [200] no8xfe.captcha-open-southeast.aliyuncs.com pd=1608 rb=403
+#4 [200] no8xfe-verify.captcha-open-southeast.aliyuncs.com pd=2545 rb=348
