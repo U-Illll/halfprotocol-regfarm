@@ -1,0 +1,194 @@
+{
+ "run": "run4",
+ "at": "2026-10-06T04:12:49.359Z",
+ "target": "https://www.dingxiang-inc.com/business/captcha",
+ "bp": {
+  "breakpointId": "br:2:2:113805:captcha-js/5\\.1\\.53/basic-Captcha-js\\.js",
+  "locations": [
+   {
+    "scriptId": "543",
+    "lineNumber": 2,
+    "columnNumber": 113810
+   }
+  ]
+ },
+ "hookInjected": true,
+ "geom": {
+  "ok": true,
+  "handle": {
+   "x": 358.66668701171875,
+   "y": 558.3333740234375
+  },
+  "content": {
+   "x": 324,
+   "y": 360.66668701171875,
+   "w": 380,
+   "h": 165
+  },
+  "sub": {
+   "x": 344,
+   "y": 404.66668701171875
+  },
+  "subStyle": "margin-top: 44px; display: block;",
+  "fragSrc": "https://static4.dingxiang-inc.com/picture/dx/BoFCF0EUTB/zib3/5a77c15fff194662885a63a92b38abfb.webp"
+ },
+ "yApi": 44,
+ "delta": 132,
+ "locate": {
+  "chamfer_top": [
+   {
+    "x": 160,
+    "y": 53,
+    "d": 0.67,
+    "ui_x": 152,
+    "ui_y": 43.7
+   },
+   {
+    "x": 258,
+    "y": 62,
+    "d": 0.74,
+    "ui_x": 245.1,
+    "ui_y": 51.1
+   },
+   {
+    "x": 280,
+    "y": 33,
+    "d": 0.76,
+    "ui_x": 266,
+    "ui_y": 27.2
+   },
+   {
+    "x": 280,
+    "y": 64,
+    "d": 0.77,
+    "ui_x": 266,
+    "ui_y": 52.8
+   },
+   {
+    "x": 269,
+    "y": 73,
+    "d": 0.79,
+    "ui_x": 255.5,
+    "ui_y": 60.2
+   },
+   {
+    "x": 276,
+    "y": 20,
+    "d": 0.8,
+    "ui_x": 262.2,
+    "ui_y": 16.5
+   },
+   {
+    "x": 272,
+    "y": 87,
+    "d": 0.8,
+    "ui_x": 258.4,
+    "ui_y": 71.8
+   },
+   {
+    "x": 73,
+    "y": 115,
+    "d": 0.8,
+    "ui_x": 69.3,
+    "ui_y": 94.9
+   },
+   {
+    "x": 280,
+    "y": 48,
+    "d": 0.81,
+    "ui_x": 266,
+    "ui_y": 39.6
+   },
+   {
+    "x": 269,
+    "y": 57,
+    "d": 0.82,
+    "ui_x": 255.5,
+    "ui_y": 47
+   },
+   {
+    "x": 271,
+    "y": 126,
+    "d": 0.83,
+    "ui_x": 257.4,
+    "ui_y": 103.9
+   },
+   {
+    "x": 284,
+    "y": 3,
+    "d": 0.83,
+    "ui_x": 269.8,
+    "ui_y": 2.5
+   }
+  ],
+  "ncc_top": [
+   {
+    "x": 320,
+    "y": 59,
+    "ncc": 0.203,
+    "ui_x": 304,
+    "ui_y": 48.7
+   },
+   {
+    "x": 72,
+    "y": 47,
+    "ncc": 0.186,
+    "ui_x": 68.4,
+    "ui_y": 38.8
+   },
+   {
+    "x": 152,
+    "y": 53,
+    "ncc": 0.185,
+    "ui_x": 144.4,
+    "ui_y": 43.7
+   },
+   {
+    "x": 88,
+    "y": 61,
+    "ncc": 0.185,
+    "ui_x": 83.6,
+    "ui_y": 50.3
+   },
+   {
+    "x": 182,
+    "y": 49,
+    "ncc": 0.175,
+    "ui_x": 172.9,
+    "ui_y": 40.4
+   },
+   {
+    "x": 144,
+    "y": 65,
+    "ncc": 0.169,
+    "ui_x": 136.8,
+    "ui_y": 53.6
+   },
+   {
+    "x": 194,
+    "y": 47,
+    "ncc": 0.151,
+    "ui_x": 184.3,
+    "ui_y": 38.8
+   },
+   {
+    "x": 330,
+    "y": 57,
+    "ncc": 0.15,
+    "ui_x": 313.5,
+    "ui_y": 47
+   }
+  ]
+ },
+ "pausedInfo": [
+  {
+   "fn": "",
+   "url": ""
+  }
+ ],
+ "acDebugLen": null,
+ "resp": {
+  "u": "https://cap.dingxiang-inc.com/api/v1",
+  "resp": "{\"success\":true,\"token\":\"5DD837E821FE4F0E9C9135A8FBB9D3C6EE00AB6504B757ED44AE810E12B44D65C39718E56E59F60F1DDDEE301C14481F1BC5FD5C4EB48E2E570ABAB2D4906F4C97A965BB9FACBD4D8C69CEEB6EECAD10\",\"msg\":null,\"tp\":null,\"sv\":null,\"retry\":0,\"ot\":null}"
+ }
+}

@@ -1,0 +1,83 @@
+[i] modules src length = 780869
+[i] module count = 77
+[check] private b64 roundtrip: true [1,2,3,4,5,250,251,252]
+[check] roundtrip len=11: OK (enc=92ch, decLen=19, text="hello world")
+[check] roundtrip len=32: OK (enc=92ch, decLen=40, text="vfnv46AAAAAAAAAAAAAAAAAA")
+[check] roundtrip len=120: OK (enc=264ch, decLen=128, text="xxxxxxxxxxxxxxxxxxxxxxxx")
+[i] token = 2a041cf5632744d68ced0787b79abdc7
+
+===== d 轨迹分段解码 =====
+段数: 31 | 前 8 段: ["/ZIiUi/pv/Z0","xIIiUiOn\\wZ0","iErj//E6rcq2ic33","igij//E6riA2ic33","igqj//E6\\cz2ic33","ivpj//Evvci2ic33","/4zj//EvviA2ic33","/Eij//EvrAi2ic33"]
+解出轨迹点: ["4,0,132,1","9,0,518,1","14,0,543,1","21,0,569,1","27,0,587,1","35,0,605,1","43,0,629,1","51,0,655,1","60,-1,681,1","69,0,698,1"] ...
+
+===== 第二层 xorDecode(token, ·) =====
+{
+ "d": {
+  "aesPlain": "/ZIiUi/pv/Z0:xIIiUiOn\\wZ0:iErj//E6rcq2ic33:igij//E6riA2ic33:igqj//E6\\cz2ic33:ivpj//Evvci2ic33:/4zj//EvviA2ic33:/Eij//EvrAi2ic33:/gXjUp/CriI00AN3:/gcj//Ev\\AI2ic3...(共530字)",
+  "xorDecoded": "ERR URI malformed"
+ },
+ "p": {
+  "aesPlain": "/vp3",
+  "xorDecoded": "75"
+ },
+ "f": {
+  "aesPlain": "ivij/wElvwaXxczXUiOkicEp\\Xc1/wp0PijzrZDrPpXXvAjqirEviipg0cj2/vXUiXL\\veA0gcvvievOPg/\\iAu+0ppRrEi0ieFxUpp/\\imrrIWriij7UEzuxv+GrrFUiZIiUigCvwaUicXG//JniiDrnvpH/iIg...(共376字)",
+  "xorDecoded": "31,2,-0.2903,0.4539,31,0.013,0.6667,0.3526,0.1508,23,0.274,0.4444,-0.0625,0.0588,0.0001,0.0295,10,0,0,0.013,0.6667,0.3526,0.1508,27,0.2739,0.4446,-0.0306,0.0216,-0.0005,0.008,29,-0.0022,0.0025,-0.0043,0.0062,0,0.0025,17,...(共281字)"
+ },
+ "ext": {
+  "aesPlain": "iII1/p33",
+  "xorDecoded": "1,31"
+ }
+}
+
+===== 样本字段解密结果 =====
+{
+ "d": {
+  "text": "/ZIiUi/pv/Z0:xIIiUiOn\\wZ0:iErj//E6rcq2ic33:igij//E6riA2ic33:igqj//E6\\cz2ic33:ivpj//Evvci2ic33:/4zj//EvviA2ic33:/Eij//EvrAi2ic33:/gXjUp/CriI00AN3:/gcj//Ev\\AI2ic33:/vZj//ErvAN2ic33:x4qj//Ervpj2ic33:xEqj...(共530字)",
+  "plainLen": 538,
+  "iv": [
+   32,
+   230,
+   107,
+   170
+  ]
+ },
+ "m": "(empty)",
+ "p": {
+  "text": "/vp3",
+  "plainLen": 12,
+  "iv": [
+   8,
+   151,
+   215,
+   139
+  ]
+ },
+ "f": {
+  "text": "ivij/wElvwaXxczXUiOkicEp\\Xc1/wp0PijzrZDrPpXXvAjqirEviipg0cj2/vXUiXL\\veA0gcvvievOPg/\\iAu+0ppRrEi0ieFxUpp/\\imrrIWriij7UEzuxv+GrrFUiZIiUigCvwaUicXG//JniiDrnvpH/iIgv/a7PE+OrAFHrAjqirEricrk0cj2igix1ZLzv/m0...(共376字)",
+  "plainLen": 384,
+  "iv": [
+   249,
+   158,
+   94,
+   39
+  ]
+ },
+ "ext": {
+  "text": "iII1/p33",
+  "plainLen": 16,
+  "iv": [
+   105,
+   0,
+   138,
+   38
+  ]
+ },
+ "cb": {
+  "text": "Bv5MCwpGibf1nv9Mrymae6pePz4uvVh6",
+  "len": 32,
+  "codeAtPos": "vfnv46",
+  "expectCode": "vfnv46",
+  "match": true
+ }
+}

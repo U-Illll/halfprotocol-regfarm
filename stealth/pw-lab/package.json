@@ -1,0 +1,9 @@
+{
+  "name": "pw-lab",
+  "private": true,
+  "type": "module",
+  "description": "patchright connectOverCDP A/B lab (stealth-kit B3)",
+  "dependencies": {
+    "patchright": "^1.63.0"
+  }
+}

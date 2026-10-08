@@ -1,0 +1,10 @@
+# 凭据与运行产物（绝不入库）
+cas-cred.txt
+**/irtoken.json
+**/live-key.json
+**/live-aaduane.txt
+*.log
+node_modules/
+__pycache__/
+*.pyc
+.DS_Store
